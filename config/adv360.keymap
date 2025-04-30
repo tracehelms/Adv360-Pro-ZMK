@@ -69,7 +69,7 @@
       bindings = <
         &kp EQUAL &kp N1     &kp N2      &kp N3      &kp N4     &kp N5 &tog 2                                                             &mo 4        &kp N6   &kp N7     &kp N8          &kp N9        &kp N0         &kp MINUS
         &kp TAB   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                              &kp C_VOL_UP &kp J    &kp L      &kp U           &kp Y         &kp SEMI       &kp BSLH
-        &kp ESC   &kp A      &kp R       &kp S       &kp F      &kp D  &to 1            &kp BSPC &kp LGUI   &kp RGUI  &kp BSPC            &kp C_VOL_DN &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
+        &kp ESC   &kp A      &kp R       &kp S       &kp T      &kp D  &to 1            &kp BSPC &kp LGUI   &kp RGUI  &kp BSPC            &kp C_VOL_DN &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
         &kp LSHFT &hm LALT Z &hm LCTRL X &hm LSHFT C &hm LGUI V &kp B                            &kp LALT  &kp RALT                                    &kp N    &hm RGUI M &hm RSHFT COMMA &hm RCTRL DOT &hm RALT SLASH &kp RSHFT
         &mo 3     &kp GRAVE  &caps_word  &kp LEFT    &kp RIGHT               &kp SPACE &kp ENTER &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
       >;
@@ -79,7 +79,7 @@
       display-name = "Qwerty";
       bindings = <
         &trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &trans  &trans  &trans  &trans     &trans   &trans     &trans
-        &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &to 1                                                &trans  &kp Y   &kp U   &kp I      &kp O    &kp P      &trans
+        &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &to 0                                                &trans  &kp Y   &kp U   &kp I      &kp O    &kp P      &trans
         &trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans &trans  &trans &trans             &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI   &trans
         &trans  &kp Z   &kp X   &kp C   &kp V   &kp B                      &trans  &trans                            &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH  &trans
         &trans  &trans  &trans  &trans  &trans               &trans &trans &trans  &trans &trans &trans                      &trans  &trans     &trans   &trans     &trans
