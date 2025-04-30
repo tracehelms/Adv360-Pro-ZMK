@@ -47,7 +47,7 @@
 * |--------+------+------+------+------+------|------|             |------|------+------+------+------+------+--------|
 * | Esc    |   A  |   R  |   S  |   T  |   D  |Qwerty|             |      |   H  |   N  |   E  |   I  |   O  | '"     |
 * |--------+------+------+------+------+------|------'             `------|------+------+------+------+------+--------|
-* | Shift  |ALT(Z)|CTL(X)|SFT(C)|GUI(V)|   B  |                           |GUI(K)|SFT(M)|CTL(,)|ALT(.)|  /?  | Shift  |
+* | Shift  |ALT(Z)|CTL(X)|SFT(C)|GUI(V)|   B  |                           |   K  |GUI(M)|SFT(,)|CTL(.)|ALT(/)| Shift  |
 * `--------+------+------+------+------+-------                           `------+------+------+------+------+--------'
 * | Func   | `~   |  '"  | Left | Right|                                         | Down |  Up  |  [{  |  ]}  | Func   |
 * `--------`---------------------------'                                         `---------------------------'--------'
@@ -70,7 +70,7 @@
         &kp EQUAL &kp N1     &kp N2      &kp N3      &kp N4     &kp N5 &tog 2                                                             &mo 4        &kp N6   &kp N7     &kp N8          &kp N9        &kp N0         &kp MINUS
         &kp TAB   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                              &kp C_VOL_UP &kp J    &kp L      &kp U           &kp Y         &kp SEMI       &kp BSLH
         &kp ESC   &kp A      &kp R       &kp S       &kp T      &kp D  &to 1            &kp BSPC &kp LGUI   &kp RGUI  &kp BSPC            &kp C_VOL_DN &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
-        &kp LSHFT &hm LALT Z &hm LCTRL X &hm LSHFT C &hm LGUI V &kp B                            &kp LALT  &kp RALT                                    &kp N    &hm RGUI M &hm RSHFT COMMA &hm RCTRL DOT &hm RALT SLASH &kp RSHFT
+        &kp LSHFT &hm LALT Z &hm LCTRL X &hm LSHFT C &hm LGUI V &kp B                            &kp LALT  &kp RALT                                    &kp K    &hm RGUI M &hm RSHFT COMMA &hm RCTRL DOT &hm RALT SLASH &kp RSHFT
         &mo 3     &kp GRAVE  &caps_word  &kp LEFT    &kp RIGHT               &kp SPACE &kp ENTER &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
       >;
     };
