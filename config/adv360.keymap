@@ -41,16 +41,16 @@
 * Default Colemak layer:
 *
 * ,--------+------+------+------+------+------+---------------------------+------+------+------+------+------+--------.
-* | =+     |  1!  |  2@  |  3#  |  4$  |  5%  |Keypad|             |Layer |  6^  |  7&  |  8*  |  9(  |  0)  | -_     |
+* | =+     |  1!  |  2@  |  3#  |  4$  |  5%  |Keypad|             | Mod  |  6^  |  7&  |  8*  |  9(  |  0)  | -_     |
 * |--------+------+------+------+------+------|------|             |------+------+------+------+------+------+--------|
-* | Tab    |   Q  |   W  |   F  |   P  |   G  |      |             |      |   J  |   L  |   U  |   Y  |  ;:  | \|     |
+* | Tab    |   Q  |   W  |   F  |   P  |   G  | Base |             |      |   J  |   L  |   U  |   Y  |  ;:  | \|     |
 * |--------+------+------+------+------+------|------|             |------|------+------+------+------+------+--------|
-* | Esc    |   A  |   R  |   S  |   T  |   D  |      |             |      |   H  |   N  |   E  |   I  |   O  | '"     |
+* | Esc    |   A  |   R  |   S  |   T  |   D  |Qwerty|             |      |   H  |   N  |   E  |   I  |   O  | '"     |
 * |--------+------+------+------+------+------|------'             `------|------+------+------+------+------+--------|
 * | Shift  |ALT(Z)|CTL(X)|SFT(C)|GUI(V)|   B  |                           |GUI(K)|SFT(M)|CTL(,)|ALT(.)|  /?  | Shift  |
 * `--------+------+------+------+------+-------                           `------+------+------+------+------+--------'
-*          | `~   |  '"  | Left | Right|                                         | Down |  Up  |  [{  |  ]}  |
-*          `---------------------------'                                         `---------------------------'
+* | Func   | `~   |  '"  | Left | Right|                                         | Down |  Up  |  [{  |  ]}  | Func   |
+* `--------`---------------------------'                                         `---------------------------'--------'
 *                                        ,-------------.         ,-------------.
 *                                        | Bksp | Gui  |         | Gui  | Ctrl |
 *                                 ,------|------|------|         |------+------+------.
@@ -71,7 +71,7 @@
         &kp TAB   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                              &kp C_VOL_UP &kp J    &kp L      &kp U           &kp Y         &kp SEMI       &kp BSLH
         &kp ESC   &kp A      &kp R       &kp S       &kp F      &kp D  &to 1            &kp BSPC &kp LGUI   &kp RGUI  &kp BSPC            &kp C_VOL_DN &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
         &kp LSHFT &hm LALT Z &hm LCTRL X &hm LSHFT C &hm LGUI V &kp B                            &kp LALT  &kp RALT                                    &kp N    &hm RGUI M &hm RSHFT COMMA &hm RCTRL DOT &hm RALT SLASH &kp RSHFT
-        &mo 3     &kp GRAVE  &CAPS_WORD  &kp LEFT    &kp RIGHT               &kp SPACE &kp ENTER &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
+        &mo 3     &kp GRAVE  &caps_word  &kp LEFT    &kp RIGHT               &kp SPACE &kp ENTER &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
       >;
     };
 
