@@ -124,7 +124,7 @@
       bindings = <
         &trans   &trans     &trans      &trans      &trans     &trans &trans                                                   &trans  &trans  &trans     &trans        &trans        &trans       &trans
         &trans   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                   &trans  &kp J   &kp L      &kp U         &kp Y         &kp SEMI     &trans
-        &trans   &kp LALT A &hm LCTRL R &kp LSHFT S &hm LGUI T &kp D  &trans             &trans &trans &trans  &trans          &trans  &kp H   &hm RGUI N &hm RSHFT E   &hm RCTRL I   &hm RALT O   &trans
+        &trans   &hm LALT A &hm LCTRL R &hm LSHFT S &hm LGUI T &kp D  &trans             &trans &trans &trans  &trans          &trans  &kp H   &hm RGUI N &hm RSHFT E   &hm RCTRL I   &hm RALT O   &trans
         &trans   &kp Z      &kp X       &kp C       &kp V      &kp B                            &trans &trans                          &kp K   &kp M      &kp COMMA     &kp DOT       &kp SLASH    &trans
         &trans   &trans     &caps_word  &trans      &trans                        &trans &trans &trans &trans  &trans &trans                   &trans     &trans        &trans        &trans       &trans
       >;
