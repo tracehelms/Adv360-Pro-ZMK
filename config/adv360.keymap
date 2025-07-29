@@ -48,16 +48,16 @@
 * ,--------+------+------+------+------+------+---------------------------+------+------+------+------+------+--------.
 * | =+     |  1!  |  2@  |  3#  |  4$  |  5%  |Keypad|             | Mod  |  6^  |  7&  |  8*  |  9(  |  0)  | -_     |
 * |--------+------+------+------+------+------|------|             |------+------+------+------+------+------+--------|
-* | Tab    |   Q  |   W  |   F  |   P  |   G  | Base |             |VolUp |   J  |   L  |   U  |   Y  |  ;:  | \|     |
+* | Tab    |   Q  |   W  |   F  |   P  |   G  | Base |             |      |   J  |   L  |   U  |   Y  |  ;:  | \|     |
 * |--------+------+------+------+------+------|------|             |------|------+------+------+------+------+--------|
-* | Esc    |   A  |   R  |   S  |   T  |   D  |Qwerty|             |VolDwn|   H  |   N  |   E  |   I  |   O  | '"     |
+* | Esc    |   A  |   R  |   S  |   T  |   D  |Qwerty|             | Esc  |   H  |   N  |   E  |   I  |   O  | '"     |
 * |--------+------+------+------+------+------|------'             `------|------+------+------+------+------+--------|
 * | Shift  |ALT(Z)|CTL(X)|SFT(C)|GUI(V)|   B  |                           |   K  |GUI(M)|SFT(,)|CTL(.)|ALT(/)| Shift  |
 * `--------+------+------+------+------+-------                           `------+------+------+------+------+--------'
 * | Func   | `~   |CapsWd| Left | Right|                                         | Down |  Up  |  [{  |  ]}  | Func   |
 * `--------`---------------------------'                                         `---------------------------'--------'
 *                                        ,-------------.         ,-------------.
-*                                        | Esc  | Gui  |         | Gui  | Esc  |
+*                                        |      | Gui  |         | Gui  |      |
 *                                 ,------|------|------|         |------+------+------.
 *                                 |      |      | Alt  |         | Alt  |      |      |
 *                                 | Bksp |Enter |------|         |------| Enter| Space|
@@ -73,10 +73,10 @@
       display-name = "Base";
       bindings = <
         &kp EQUAL &kp N1     &kp N2      &kp N3      &kp N4     &kp N5 &tog 2                                                             &mo 4        &kp N6   &kp N7     &kp N8          &kp N9        &kp N0         &kp MINUS
-        &kp TAB   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                              &kp C_VOL_UP &kp J    &kp L      &kp U           &kp Y         &kp SEMI       &kp BSLH
-        &kp ESC   &kp A      &kp R       &kp S       &kp T      &kp D  &to 1            &kp ESC  &kp LGUI   &kp RGUI  &kp ESC             &kp C_VOL_DN &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
+        &kp TAB   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                              &kp C_PP     &kp J    &kp L      &kp U           &kp Y         &kp SEMI       &kp BSLH
+        &kp ESC   &kp A      &kp R       &kp S       &kp T      &kp D  &to 1            &none    &kp LGUI  &kp RGUI  &none                &kp ESC      &kp H    &kp N      &kp E           &kp I         &kp O          &kp SQT
         &kp LSHFT &hm LALT Z &hm LCTRL X &hm LSHFT C &hm LGUI V &kp B                            &kp LALT  &kp RALT                                    &kp K    &hm RGUI M &hm RSHFT COMMA &hm RCTRL DOT &hm RALT SLASH &kp RSHFT
-        &mo 3     &kp GRAVE  &caps_word  &kp LEFT    &kp RIGHT               &kp BSPC  &kp ENTER &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
+        &mo 3     &kp GRAVE  &caps_word  &kp LEFT    &kp RIGHT               &kp BSPC  &kp ESC   &kp LCTRL &kp RCTRL &kp ENTER &kp SPACE                        &kp DOWN   &kp UP          &kp LBKT      &kp RBKT       &mo 3
       >;
     };
 
@@ -105,11 +105,11 @@
     fn {
       display-name = "Fn";
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &trans                                           &kp C_PP   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &to 5                                            &kp C_NEXT &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &trans        &trans &trans &trans &trans        &kp C_PREV &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                           &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans                    &trans &trans &trans  &trans  &trans
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &trans                                           &kp C_PP     &kp F7      &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &trans &trans &trans &trans &trans  &trans                                           &kp C_VOL_UP &kp CC_PREV &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &trans        &trans &trans &trans &trans        &kp C_VOL_DN &kp CC_NEXT &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                             &trans      &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans                           &trans &trans &trans  &trans  &trans
       >;
     };
 
@@ -124,26 +124,15 @@
       >;
     };
 
-    mods_on_home {
-      display-name = "Homerow mods on homerow";
-      bindings = <
-        &trans   &trans     &trans      &trans      &trans     &trans &trans                                                   &trans  &trans  &trans     &trans        &trans        &trans       &trans
-        &trans   &kp Q      &kp W       &kp F       &kp P      &kp G  &to 0                                                   &trans  &kp J   &kp L      &kp U         &kp Y         &kp SEMI     &trans
-        &trans   &hm LALT A &hm LCTRL R &hm LSHFT S &hm LGUI T &kp D  &trans             &trans &trans &trans  &trans          &trans  &kp H   &hm RGUI N &hm RSHFT E   &hm RCTRL I   &hm RALT O   &trans
-        &trans   &kp Z      &kp X       &kp C       &kp V      &kp B                            &trans &trans                          &kp K   &kp M      &kp COMMA     &kp DOT       &kp SLASH    &trans
-        &trans   &trans     &caps_word  &trans      &trans                        &trans &trans &trans &trans  &trans &trans                   &trans     &trans        &trans        &trans       &trans
-      >;
-    };
+    // extra1 {
+    //   display-name = "Red";
+    //   status = "reserved";
+    // };
 
-    extra1 {
-      display-name = "Red";
-      status = "reserved";
-    };
-
-    extra2 {
-      display-name = "Purple";
-      status = "reserved";
-    };
+    // extra2 {
+    //   display-name = "Purple";
+    //   status = "reserved";
+    // };
 
     // extra3 {
     //   display-name = "Cyan";
